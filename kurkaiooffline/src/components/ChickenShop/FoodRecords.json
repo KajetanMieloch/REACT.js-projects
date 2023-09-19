@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "Name": "Potato",
+        "Img": "https://i.imgur.com/j4G3zI1.png",
+        "Cost": 5,
+        "Multi": 1,
+        "Cal": 660,
+        "Desc": "MMMMMMM..... Tasty!"
+    },
+    {
+        "id": 2,
+        "Name": "Corn",
+        "Img": "https://i.imgur.com/gRL2bEo.png",
+        "Cost": 20,
+        "Multi": 1,
+        "Cal": 960,
+        "Desc": "MMMMMMM..... Tasty!"
+    },
+    {
+        "id": 3,
+        "Name": "GMO-Corn",
+        "Img": "https://i.imgur.com/MH16z2J.png",
+        "Cost": 50,
+        "Multi": 1.5,
+        "Cal": 960,
+        "Desc": "MMMMMMM..... Tasty!"
+    }
+]

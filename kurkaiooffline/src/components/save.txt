@@ -1,0 +1,14 @@
+    const [name, setName] = useState(localStorage.getItem('name'))
+
+    const saveProgres = (name) =>{
+        localStorage.setItem('name', name)
+    }
+
+
+    return(
+        <div>
+            <input value={name} onChange={(key) => setName(key.target.value)} />
+            <button onClick={saveProgres(name)}>zapisz</button>
+        </div>
+    )
+}

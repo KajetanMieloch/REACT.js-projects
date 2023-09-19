@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "Name": "Potato seeds",
+        "Img": "https://i.imgur.com/iv1ZGUE.png",
+        "Cost": 0.1,
+        "Growth": 10,
+        "Desc": "Gibbe me wata"
+    },
+    {
+        "id": 2,
+        "Name": "Corn seeds",
+        "Img": "https://i.imgur.com/q9xuiHw.png",
+        "Cost": 0.1,
+        "Growth": 13,
+        "Desc": "Gibbe me wata"
+    },
+    {
+        "id": 3,
+        "Name": "GMO-Corn seeds",
+        "Img": "https://i.imgur.com/q9xuiHw.png",
+        "Cost": 1,
+        "Growth": 6,
+        "Desc": "Gibbe me wata"
+    }
+]

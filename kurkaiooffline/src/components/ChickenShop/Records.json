@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "Name": "Kokoszka",
+        "Img": "https://i.imgur.com/1twPdjH.png",
+        "Cost": 100,
+        "EggAmount": "7",
+        "Comfort": "1",
+        "FoodComsuption" : "165",
+        "Desc": "You can hug me <3"
+    },
+    {
+        "id": 2,
+        "Name": "Monika",
+        "Img": "https://i.imgur.com/DsIMxRa.png",
+        "Cost": 200,
+        "EggAmount": "12",
+        "Comfort": "2",
+        "FoodComsuption" : "300",
+        "Desc": "You can hug me <3"
+    },
+    {
+        "id": 3,
+        "Name": "Grzegorz",
+        "Img": "https://i.imgur.com/SEeRSCi.png",
+        "Cost": 200,
+        "EggAmount": "16",
+        "Comfort": "2",
+        "FoodComsuption" : "520",
+        "Desc": "You can hug me <3"
+    },
+    {
+        "id": 4,
+        "Name": "Kasia",
+        "Img": "https://i.imgur.com/wtpOkpD.png",
+        "Cost": 1000,
+        "EggAmount": "100",
+        "Comfort": "3",
+        "FoodComsuption" : "1200",
+        "Desc": "You can hug me <3"
+
+    }
+]
