@@ -1,0 +1,36 @@
+.menu {
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+    text-align: left;
+}
+.menuItem{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.menuItem a{
+    color: #626262;
+    font-size: calc(0.7rem + 0.6vw);
+}
+
+.menuContainer{
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    background-color: #c0c0c0;
+    box-shadow: rgb(146, 146, 146) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.bucket{
+    margin-top: 0;
+}

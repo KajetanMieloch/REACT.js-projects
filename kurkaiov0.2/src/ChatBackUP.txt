@@ -1,0 +1,120 @@
+import logo from './logo.svg';
+import './App.css';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import { useState } from 'react';
+import { useRef } from 'react';
+
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useCollectionData } from 'react-firebase-hooks/firestore'
+
+firebase.initializeApp({
+  apiKey: "AIzaSyBEgxpi3uQvmXELHHhu2Y1J1A76z2unPw4",
+  authDomain: "kurkaio.firebaseapp.com",
+  projectId: "kurkaio",
+  storageBucket: "kurkaio.appspot.com",
+  messagingSenderId: "958438104188",
+  appId: "1:958438104188:web:78cc1caa9f79d17cd37df9",
+  measurementId: "G-R2Q2X0ZBHX"
+})
+
+const auth = firebase.auth();
+const firestore = firebase.firestore();
+
+function App() {
+  const [user] = useAuthState(auth);
+  return (
+    <div className="App">
+      <header>
+        
+      </header>
+      <section>
+        {user ? <ChatRoom /> : <SignIn />}
+      </section>
+    </div>
+  );
+}
+
+const SignIn = () =>{
+  const signInWithGoogle = () =>{
+      const provider = new firebase.auth.GoogleAuthProvider();
+      auth.signInWithPopup(provider);
+  }
+  
+  return(
+      <div>
+          <button onClick={signInWithGoogle}>Sign in with google</button>
+      </div>
+
+  )
+}
+
+const SignOut = () =>{
+  return auth.currentUser &&(
+    <button onClick={() => auth.signOut()}>Sign Out</button>
+  )
+}
+
+const ChatRoom = () =>{
+  
+  const dummy = useRef();
+
+  const messagesRef = firestore.collection('messages');
+  const query = messagesRef.orderBy('createdAt').limit(25);
+  
+  const [messages] = useCollectionData(query, {idField: 'id'});
+
+  const [formValue, setFormValue] = useState('');
+
+  const sendMessage = async(e) => {
+    e.preventDefault();
+
+    const { uid, photoURL } = auth.currentUser;
+
+    await messagesRef.add({
+      text: formValue,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+      uid,
+      photoURL
+    })
+
+    setFormValue('');
+
+    dummy.current.scrollIntoView({ behavior: 'smooth'})
+
+  }
+
+  return (
+    <>
+      <div>
+        {messages && messages.map(msg => <ChatMessage key={msg.id} messages={msg}/>)}
+      </div>
+
+      <div ref={dummy}></div>
+
+      <form onSubmit={sendMessage}>
+        <input value={formValue} onChange={(e) => setFormValue(e.target.value)} />
+
+        <button type='submit'>Wyslij</button>
+      </form>
+      <SignOut/>
+
+    </>
+  )
+}
+
+const ChatMessage = (props) =>{
+  const {text, uid, photoURL } = props.messages
+
+  const messageClass = uid === auth.currentUser.uid ? 'sent' : 'recived';
+
+  return( 
+  <div>
+    <img src={photoURL}/>
+    <p>{text}</p>
+  </div>
+  )
+}
+
+export default App;

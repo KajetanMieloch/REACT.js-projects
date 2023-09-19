@@ -1,0 +1,29 @@
+.hotel{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(230, 233, 255);
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.description{
+    color: gray;
+    margin-top: 10px;
+    font-size: 0.88rem;
+    margin-bottom: 0;
+}
+
+.fontSizing a{
+    font-size: calc(0.8rem + 0.6vw);
+    padding-left: calc(0.7rem + 1.8vw);
+    padding-right: calc(0.7rem + 1.8vw);
+}
+
+.fontSizing p{
+    font-size: calc(0.9rem + 0.5vw);
+    word-break:keep-all
+}

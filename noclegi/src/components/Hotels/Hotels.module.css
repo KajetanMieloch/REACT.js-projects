@@ -1,0 +1,12 @@
+.menuContainer{
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+.title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 0.3rem;
+}
