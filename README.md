@@ -1,7 +1,7 @@
-# Projekty React z 2019-2020 🚀
-Cześć! 👋 Jestem studentem, który pracował nad różnymi projektami w React w latach 2019-2020. W tym repozytorium znajdują się te projekty. Chociaż niektóre z nich są niedokończone, pokazują one moje zaangażowanie i ciężką pracę nad nauką i praktyką Reacta.
+# React Projects from 2019-2020 🚀
+Hello! 👋 I'm a student who worked on various React projects in the years 2019-2020. This repository contains those projects. While some of them are unfinished, they demonstrate my dedication and hard work in learning and practicing React.
 
-## Moja Podróż Nauki 🌱
-Przez cały rok 2019 i 2020 pracowałem nad różnymi projektami w React. Każdy z nich był dla mnie okazją do nauki nowych koncepcji i technik. Chociaż niektóre z tych projektów są niedokończone, są one dowodem na moje zaangażowanie i ciężką pracę.
+## My Learning Journey 🌱
+Throughout the year 2019 and 2020, I worked on different React projects. Each of them was an opportunity for me to learn new concepts and techniques. Even though some of these projects remain incomplete, they serve as evidence of my commitment and hard work.
 
-### Dziękuję za odwiedzenie mojego repozytorium! 😊
+### Thank you for visiting my repository! 😊
